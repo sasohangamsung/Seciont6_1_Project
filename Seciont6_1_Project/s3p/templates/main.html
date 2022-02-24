@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+    <html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link rel='icon' href='static/image/2.jpg'>
+    <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  </body>
+</html>
+    <title>
+      배구네이터
+    </title>
+    <style>
+        .jb-xx-small { font-size: xx-small; }
+        .jb-x-small { font-size: x-small; }
+        .jb-small { font-size: small; }
+        .jb-medium { font-size: medium; }
+        .jb-large { font-size: large; }
+        .jb-x-large { font-size: x-large; }
+        .jb-xx-large { font-size: xx-large; }
+      </style>
+  </head>
+    <body height: 100vh; bgcolor=black>
+    <h1 class="jb-medium" style="text-align:right;">&nbsp</h1>
+    <h1 class="jb-medium" style="text-align:right;">사소한감성&nbsp&nbsp&nbsp&nbsp</h1>
+    <h1><center>당신이 생각하는 배구선수는?</center></h1>
+    <center><img src="{{url_for('static', filename='image/1.jpg')}}"></center>
+    <h1 class="jb-large"><center>
+        <form action="\post" method="post" class="input-form">
+            <select name="age" class="form-select form-select-lg mb-3" style="width:400px;height:50px;">
+            <h1><center>&nbsp</center></h1>
+            <option value="20미만">20미만</option>
+            <option value="20이상 25미만">20이상 25미만</option>
+            <option value="25이상 30미만">25이상 30미만</option>
+            <option value="30이상 35미만">30이상 35미만</option>
+            <option value="35이상 40미만">35이상 40미만</option>
+            <option value="40이상">40이상</option>
+            <option value="None1">모르겠어요</option>
+            <option value="None1" selected="selected">나이를 선택하세요</option></center>
+            </select>
+    </h1>
+    <h1 class="jb-large">
+    <form action="\post" method="post" class="input-form">
+        <center><select name="sex" class="form-select form-select-lg mb-3" style="width:400px;height:50px;">
+            <option value="남자">남자</option>
+            <option value="여자">여자</option>
+            <option value="None1">모르겠어요</option>
+            <option value="None1" selected="selected">성별을 선택하세요</option></center>
+            </select>
+    </h1>
+        <form action="\post" method="post" class="input-form">
+            <center><select name="kinds" class="form-select form-select-lg mb-3" style="width:400px;height:50px;">
+                <option value="현역선수">현역선수</option>
+                <option value="기타선수">기타선수</option>
+                <option value="은퇴선수">은퇴선수</option>
+                <option value="외국인선수">외국인선수</option>
+                <option value="None1">모르겠어요</option>
+                <option value="None1" selected="selected">선수상태를 선택하세요</option></center>
+                </select>
+    </h1>
+        <form action="\post" method="post" class="input-form">
+            <center><select name="position" class="form-select form-select-lg mb-3" style="width:400px;height:50px;">
+                <option value="레프트">레프트</option>
+                <option value="라이트">라이트</option>
+                <option value="센터">센터</option>
+                <option value="세터">세터</option>
+                <option value="리베로">리베로</option>
+                <option value="None1">모르겠어요</option>
+                <option value="None1" selected="selected">포지션을 선택하세요</option></center>
+                </select>
+    </h1>
+        <form action="\post" method="post" class="input-form">
+            <center><select name="weight_class" class="form-select form-select-lg mb-3" style="width:400px;height:50px;">
+                <option value="40이상 50미만">40이상 50미만</option>
+                <option value="50이상 60미만">50이상 60미만</option>
+                <option value="60이상 70미만">60이상 70미만</option>
+                <option value="70이상 80미만">70이상 80미만</option>
+                <option value="80이상 90미만">80이상 90미만</option>
+                <option value="90이상 100미만">90이상 100미만</option>
+                <option value="100이상 110미만">100이상 110미만</option>
+                <option value="110이상 120미만">110이상 120미만</option>
+                <option value="None1">모르겠어요</option>
+                <option value="None1" selected="selected">체중을 선택하세요</option></center>
+                </select>
+    </h1>
+        <form action="\post" method="post" class="input-form">
+            <center><select name="height_class" class="form-select form-select-lg mb-3" style="width:400px;height:50px;">
+                <option value="155이상 160미만">155이상 160미만</option>
+                <option value="160이상 165미만">160이상 165미만</option>
+                <option value="165이상 170미만">165이상 170미만</option>
+                <option value="170이상 175미만">170이상 175미만</option>
+                <option value="175이상 180미만">175이상 180미만</option>
+                <option value="180이상 185미만">180이상 185미만</option>
+                <option value="185이상 190미만">185이상 190미만</option>
+                <option value="190이상 195미만">190이상 195미만</option>
+                <option value="195이상 200미만">195이상 200미만</option>
+                <option value="200이상 205미만">200이상 205미만</option>
+                <option value="205이상 210미만">205이상 210미만</option>
+                <option value="210이상">210이상</option>
+                <option value="None1">모르겠어요</option>
+                <option value="None1" selected="selected">키를 선택하세요</option></center>
+                </select>
+    </h1>
+        <form action="\post" method="post" class="input-form">
+            <center><select name="birth(month)_4" class="form-select form-select-lg mb-3" style="width:400px;height:50px;">
+                <option value="1월~3월">1월~3월</option>
+                <option value="4월~6월">4월~6월</option>
+                <option value="7월~9월">7월~9월</option>
+                <option value="10월~12월">10월~12월</option>
+                <option value="None1">모르겠어요</option>
+                <option value="None1" selected="selected">생일(월)을 선택하세요</option></center>
+                </select>
+    </h1>
+    </h1>
+        <form action="\post" method="post" class="input-form">
+            <center><select name="birth(day)_4" class="form-select form-select-lg mb-3" style="width:400px;height:50px;">
+                <option value="1일~10일">1일~10일</option>
+                <option value="11일~20일">11일~20일</option>
+                <option value="21일~31일">21일~31일</option>
+                <option value="None1">모르겠어요</option>
+                <option value="None1" selected="selected">생일(일)을 선택하세요</option></center>
+                </select>
+    </h1>
+        <form action="\post" method="post" class="input-form">
+            <center><select name="school_last" class="form-select form-select-lg mb-3" style="width:400px;height:50px;">
+                <option value="초등학교->프로">초등학교->프로</option>
+                <option value="중학교->프로">중학교->프로</option>
+                <option value="고등학교->프로">고등학교->프로</option>
+                <option value="대학교->프로">대학교->프로</option>
+                <option value="None1">모르겠어요</option>
+                <option value="None1" selected="selected">프로 진출시기를 선택하세요</option></center>
+                </select>
+    </h1>
+    <h1 class="jb-large">
+        <h1 class="jb-x-small"><center>&nbsp</center></h1>
+        <center><input type="submit" value="결과 확인하기" class="btn btn-outline-success" style="width:200px;height:40px;"></center>
+        <h1 class="jb-x-small"><center>&nbsp</center></h1>
+        <script>
+            function dashboard() {
+                location.href  ="http://180.69.48.130:3000/public/dashboard/b1ad1469-0726-4739-bd4e-f43722f04fe2" ; // 방법3
+            }
+            </script>
+    </h1>
+    <h1 class="jb-x-small"><center>&nbsp</center></h1>
+    <h1 class="jb-large"><center>선수들에게 응원의 메세지를 남겨주세요</center></h1>
+    <h1 class="jb-x-small"><center>&nbsp</center></h1>
+    <h1 style="width: 80%;" >
+    <div id="disqus_thread"></div>
+    <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://baegunator.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <script id="dsq-count-scr" src="//baegunator.disqus.com/count.js" async></script>
+    </h1>
+    <h1 class="jb-x-small"><center>&nbsp</center></h1>
+    <h1 class="jb-x-small"><center>&nbsp</center></h1>
+    <h1 class="jb-x-small"><center>&nbsp</center></h1>
+    <h1 class="jb-x-small"><center>&nbsp</center></h1>
+    </form>
+ </body>
+</html>
